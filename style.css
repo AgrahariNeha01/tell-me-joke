@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('j5.jpg'); 
+    background-size: cover; 
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    /* padding: 20px; */
+    box-shadow: 0px 0px 10px rgba(116, 96, 96, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgba(255, 255, 255,.0); */
+}
+
+h1 {
+    margin-bottom: 20px; /* Reduce space between h1 and buttons */
+    color: #ba2e2e;
+    font-size: 100px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-family: 'Dancing Script', cursive, sans-serif;
+    
+}
+
+.pushable {
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    margin: 10px;
+    box-shadow: 0px 6px 12px rgb(154, 204, 204);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* position: fixed; */
+}
+
+.pushable:hover {
+    background-color: black;
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
+.front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+#Joke {
+    margin-top: 20px;
+    font-size: 24px;
+    /* font-weight: bo; */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.55);
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    /* margin: auto; */
+    /* height: 200px; Fixed height for the joke container */
+    overflow-y: auto; 
+}
